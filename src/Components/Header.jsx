@@ -1,7 +1,7 @@
-import roboslogo from '../logos/roboslogo.png'
 import { Link } from 'react-router-dom'
 import { Heart, ShoppingCart, Search, X, Menu } from 'lucide-react'
 import { useState } from 'react'
+import Dropdown from './Dropdown';
 
 function Header(){
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -24,12 +24,9 @@ function Header(){
                     </Link>
                 </div>
                 <nav className='hidden md:block'>
+                    
                     <ul className='flex space-x-8'>
-                        <li>
-                            <Link to='/products' className='hover:text-gray-300 transition-colors font-medium'>
-                            Products
-                            </Link>
-                        </li>
+                        <Dropdown/>
                         <li>
                             <Link to='/about' className='hover:text-gray-300 transition-colors font-medium'>
                             About

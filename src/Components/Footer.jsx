@@ -5,9 +5,9 @@ import mastercard from '../logos/mastercard.jpg'
 import paypal from '../logos/paypal.jpg'
 import visa from '../logos/visa.jpg'
 import facebook from '../logos/facebook.jpg'
-import github from '../logos/github.png'
+import github from '../logos/github.jpg'
 import instagram from '../logos/instagram.jpg'
-import linkedin from '../logos/linkedin.png'
+import linkedin from '../logos/linkedin.jpg'
 import x from '../logos/x.png'
 
 function Footer(){
