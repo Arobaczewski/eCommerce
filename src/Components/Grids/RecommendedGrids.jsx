@@ -27,13 +27,7 @@ function RecommendedGrids({ currentProductId, category }){
     }
 
     return (
-        <div className="container mx-auto px-6">
-            <div className='mt-12 border-t pt-8'>
-                <h2 className='text-xl font-bold text-gray-900 mb-6'>You May Also Like</h2>
-            </div>
-            
             <ProductGrid products={randomProducts}/>
-        </div>
     )
 }
 

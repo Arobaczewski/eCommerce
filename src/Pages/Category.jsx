@@ -3,6 +3,7 @@ import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import ProductGrid from "../Components/Grids/ProductGrid"
 import { getProductByCategory } from "../Components/Products"
+import Cart from '../Components/Cart.jsx';
 
 function Category(){
     const { categoryName = '' } = useParams();
@@ -16,6 +17,7 @@ function Category(){
                 <p className="text-gray-600">Please Select a valid category</p>
             </div>
             <Footer/>
+            <Cart/>
             </>
         )
     }
@@ -33,6 +35,7 @@ function Category(){
                 <p className="text-gray-600">Sorry, we couldn't find any products in the {displayCategory} category.</p>
             </div>
             <Footer/>
+            <Cart/>
             </>
         );
     }
@@ -49,6 +52,7 @@ function Category(){
             <ProductGrid products={categoryProducts}/>
         </div>
         <Footer/>
+        <Cart/>
         </>
     )
 

@@ -30,6 +30,7 @@ export const products = [
         name: `Chicago White Sox Nike Home Limited Pick-A-Player Retired Roster Jersey - White`,
         inStock: true,
         category: 'Apparel',
+        size: '',
         price: 199.99,
         description: `Rep your favorite Chicago White Sox legend with 
                       this Home Limited Konerko Roster Jersey. This Nike jersey was 
@@ -46,6 +47,7 @@ export const products = [
         name: 'Chelsea FC Cole Palmer Home Jersey 2025-26',
         inStock: true,
         category: 'Apparel',
+        size: '',
         price: 132,
         description: `Celebrate the storied history of the club and the 
                       ever-evolving, vibrant spirit of London with Chelsea FC's 2025-26 Home 
@@ -63,6 +65,7 @@ export const products = [
         name: '#10 Jordan Love Nike Black Fashion Game Jersey',
         inStock: true,
         category: 'Apparel',
+        size: '',
         price: 129.99,
         description: `Stay true to your team all day, every day, gameday. 
                       Green Bay Packers Nike black fashion game jersey is inspired by what the players are wearing on the field, 
@@ -76,6 +79,7 @@ export const products = [
         name: `Men's Chicago Blackhawks Connor Bedard Fanatics Red Home Premium Jersey`,
         inStock: true,
         category: 'Apparel',
+        size: '',
         price: 229.99,
         description: `You can experience the same excitement you feel while watching the 
                       Chicago Blackhawks play every time you put on this 
@@ -129,7 +133,7 @@ export const products = [
     },
     {
         id: 8,
-        name: '3-Pieces 210" Breathing Leather Power Reclining Theater Sectional with Wireless Chargers and LED Lighting',
+        name: '3-Pieces 210" Breathing Leather Power Reclining Theater Sectional Couch with Wireless Chargers and LED Lighting',
         inStock: true,
         category: 'Misc',
         price: 1999.99,

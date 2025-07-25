@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.4",
     "@tailwindcss/vite": "^4.1.10",
+    "emailjs-com": "^3.2.0",
     "lucide": "^0.518.0",
     "lucide-react": "^0.522.0",
     "react": "^19.1.0",

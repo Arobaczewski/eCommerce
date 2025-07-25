@@ -1,6 +1,7 @@
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { ExternalLink, Github, Linkedin, Code, Trophy, Target } from 'lucide-react';
+import Cart from '../Components/Cart.jsx';
 
 function About() {
     return (
@@ -8,13 +9,13 @@ function About() {
             <Header />
             <div className="bg-gray-50 min-h-screen">
                 {/* Hero Section */}
-                <div className="bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+                <div className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white">
                     <div className="container mx-auto px-6 py-16">
                         <div className="max-w-4xl mx-auto text-center">
                             <h1 className="text-4xl md:text-5xl font-bold mb-4">
                                 Hey, I'm Alexander Robaczewski
                             </h1>
-                            <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
+                            <p className="text-xl md:text-2xl text-indigo-100 leading-relaxed">
                                 Career-changer turning 8+ years of tech sales experience into web development passion
                             </p>
                         </div>
@@ -28,7 +29,7 @@ function About() {
                         {/* Why This Site Exists */}
                         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-                                <Target className="mr-3 text-blue-600" />
+                                <Target className="mr-3 text-indigo-600" />
                                 Why This Site Exists
                             </h2>
                             <div className="prose prose-lg text-gray-700 leading-relaxed space-y-4">
@@ -42,7 +43,7 @@ function About() {
                                     but nothing clicked. Eventually, financial reality hit, and I took a position at a 
                                     retail cannabis store in June 2024. But the tech dream never died.
                                 </p>
-                                <p className="font-semibold text-blue-600">
+                                <p className="font-semibold text-indigo-600">
                                     In March 2025, I finally found my answer: coding. I enrolled in Codecademy's full-stack 
                                     development course and immediately knew this was it. Time to build things instead of just selling them.
                                 </p>
@@ -58,7 +59,7 @@ function About() {
                             </p>
                             
                             <div className="grid md:grid-cols-3 gap-6 mt-6">
-                                <div className="bg-blue-50 p-6 rounded-lg">
+                                <div className="bg-indigo-50 p-6 rounded-lg border border-indigo-100">
                                     <h3 className="font-bold text-gray-900 mb-2">🏆 The Sports Fan</h3>
                                     <p className="text-gray-700 text-sm">
                                         Chicago born and raised, but I'm a rebel – White Sox over Cubs, 
@@ -67,7 +68,7 @@ function About() {
                                     </p>
                                 </div>
                                 
-                                <div className="bg-green-50 p-6 rounded-lg">
+                                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                                     <h3 className="font-bold text-gray-900 mb-2">💻 The Tech Enthusiast</h3>
                                     <p className="text-gray-700 text-sm">
                                         That Nintendo Switch 2 and RTX 5070? Not placeholder products – 
@@ -75,10 +76,10 @@ function About() {
                                     </p>
                                 </div>
                                 
-                                <div className="bg-purple-50 p-6 rounded-lg">
+                                <div className="bg-indigo-50 p-6 rounded-lg border border-indigo-100">
                                     <h3 className="font-bold text-gray-900 mb-2">🎯 The Real Person</h3>
                                     <p className="text-gray-700 text-sm">
-                                        The couch, motorcycle, theater sectional – these represent real wants and needs, 
+                                        The championship belt, motorcycle, theater sectional – these represent real wants and needs, 
                                         making this project authentic rather than generic.
                                     </p>
                                 </div>
@@ -88,7 +89,7 @@ function About() {
                         {/* Technical Journey */}
                         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-                                <Code className="mr-3 text-blue-600" />
+                                <Code className="mr-3 text-indigo-600" />
                                 The Technical Journey
                             </h2>
                             <p className="text-gray-700 leading-relaxed mb-6">
@@ -101,19 +102,19 @@ function About() {
                                     <h3 className="text-xl font-semibold text-gray-900 mb-4">Technologies Mastered</h3>
                                     <ul className="space-y-2">
                                         <li className="flex items-center text-gray-700">
-                                            <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                                            <span className="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>
                                             <strong>React & JavaScript</strong> - Component architecture, state management
                                         </li>
                                         <li className="flex items-center text-gray-700">
-                                            <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                            <span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
                                             <strong>Tailwind CSS</strong> - First time using it, total game-changer
                                         </li>
                                         <li className="flex items-center text-gray-700">
-                                            <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                            <span className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>
                                             <strong>React Router</strong> - useParams(), slugs, dynamic routing
                                         </li>
                                         <li className="flex items-center text-gray-700">
-                                            <span className="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                                            <span className="w-2 h-2 bg-gray-500 rounded-full mr-3"></span>
                                             <strong>Responsive Design</strong> - Mobile-first, professional layouts
                                         </li>
                                     </ul>
@@ -123,20 +124,20 @@ function About() {
                                     <h3 className="text-xl font-semibold text-gray-900 mb-4">Features I'm Proud Of</h3>
                                     <ul className="space-y-2">
                                         <li className="flex items-center text-gray-700">
-                                            <Trophy className="w-4 h-4 mr-3 text-yellow-500" />
+                                            <Trophy className="w-4 h-4 mr-3 text-indigo-500" />
                                             <strong>Dynamic Product Cards</strong> - Auto-generating content from data
                                         </li>
                                         <li className="flex items-center text-gray-700">
-                                            <Trophy className="w-4 h-4 mr-3 text-yellow-500" />
+                                            <Trophy className="w-4 h-4 mr-3 text-indigo-500" />
                                             <strong>Category Filtering</strong> - Reusable, scalable system
                                         </li>
                                         <li className="flex items-center text-gray-700">
-                                            <Trophy className="w-4 h-4 mr-3 text-yellow-500" />
+                                            <Trophy className="w-4 h-4 mr-3 text-indigo-500" />
                                             <strong>Professional UI/UX</strong> - Clean, modern interface
                                         </li>
                                     </ul>
                                     
-                                    <div className="mt-4 p-4 bg-yellow-50 rounded-lg">
+                                    <div className="mt-4 p-4 bg-indigo-50 rounded-lg border border-indigo-200">
                                         <p className="text-sm text-gray-700">
                                             <strong>The Challenge:</strong> Styling has been my nemesis! But that's exactly 
                                             why I started with front-end – to get comfortable being uncomfortable.
@@ -149,13 +150,13 @@ function About() {
                         {/* What's Next */}
                         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">What's Next</h2>
-                            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+                            <div className="bg-gradient-to-r from-indigo-50 to-gray-50 p-6 rounded-lg border border-indigo-100">
                                 <p className="text-gray-700 leading-relaxed mb-4">
                                     This project took about two weeks (minus some 4th of July downtime), but I'm far from done. 
                                     Next up: adding PostgreSQL and Node.js to create a full-stack application with real backend 
                                     functionality and database integration.
                                 </p>
-                                <p className="font-semibold text-blue-600">
+                                <p className="font-semibold text-indigo-600">
                                     The plan is simple: keep learning, keep building, keep getting better until I'm undeniable.
                                 </p>
                             </div>
@@ -166,14 +167,14 @@ function About() {
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why I'm Different</h2>
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-4">
-                                    <div className="border-l-4 border-blue-500 pl-4">
+                                    <div className="border-l-4 border-indigo-500 pl-4">
                                         <h3 className="font-semibold text-gray-900">Real-world Experience</h3>
                                         <p className="text-gray-700 text-sm">
                                             10+ years of customer-facing roles, team leadership, and working in fast-paced tech environments.
                                         </p>
                                     </div>
                                     
-                                    <div className="border-l-4 border-green-500 pl-4">
+                                    <div className="border-l-4 border-indigo-400 pl-4">
                                         <h3 className="font-semibold text-gray-900">Genuine Passion</h3>
                                         <p className="text-gray-700 text-sm">
                                             I spent months after leaving Verizon trying different tech paths, but nothing resonated like coding.
@@ -182,14 +183,14 @@ function About() {
                                 </div>
                                 
                                 <div className="space-y-4">
-                                    <div className="border-l-4 border-purple-500 pl-4">
+                                    <div className="border-l-4 border-gray-500 pl-4">
                                         <h3 className="font-semibold text-gray-900">Continuous Learner</h3>
                                         <p className="text-gray-700 text-sm">
                                             Finishing this project doesn't mean I stop learning. I'm committed to constantly improving.
                                         </p>
                                     </div>
                                     
-                                    <div className="border-l-4 border-red-500 pl-4">
+                                    <div className="border-l-4 border-indigo-600 pl-4">
                                         <h3 className="font-semibold text-gray-900">Team Player</h3>
                                         <p className="text-gray-700 text-sm">
                                             Management experience taught me collaboration, goal-hitting, and quick adaptation.
@@ -200,9 +201,9 @@ function About() {
                         </section>
 
                         {/* Let's Connect */}
-                        <section className="bg-gradient-to-r from-blue-600 to-purple-700 text-white rounded-lg p-8">
+                        <section className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white rounded-lg p-8">
                             <h2 className="text-3xl font-bold mb-6 text-center">Let's Connect</h2>
-                            <p className="text-center text-blue-100 mb-8 leading-relaxed">
+                            <p className="text-center text-indigo-100 mb-8 leading-relaxed">
                                 I'm actively seeking opportunities in front-end development, React development, or any role 
                                 where I can contribute while continuing to grow.
                             </p>
@@ -220,7 +221,7 @@ function About() {
                                         <ExternalLink className="mr-3" size={20} />
                                         <div>
                                             <div className="font-semibold">Tip Calculator</div>
-                                            <div className="text-sm text-blue-100">Clean, responsive utility app</div>
+                                            <div className="text-sm text-indigo-100">Clean, responsive utility app</div>
                                         </div>
                                     </a>
                                     
@@ -233,7 +234,7 @@ function About() {
                                         <ExternalLink className="mr-3" size={20} />
                                         <div>
                                             <div className="font-semibold">Spotify Weather App</div>
-                                            <div className="text-sm text-blue-100">Music recommendations based on weather</div>
+                                            <div className="text-sm text-indigo-100">Music recommendations based on weather</div>
                                         </div>
                                     </a>
                                 </div>
@@ -262,7 +263,7 @@ function About() {
                                 </a>
                             </div>
                             
-                            <p className="text-center text-blue-100 mt-6">
+                            <p className="text-center text-indigo-100 mt-6">
                                 Thanks for checking out my work – and yes, I really do want all these products! 😄
                             </p>
                         </section>
@@ -270,6 +271,7 @@ function About() {
                 </div>
             </div>
             <Footer />
+            <Cart/>
         </>
     );
 }
