@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import ProductGrid from "../Components/Grids/ProductGrid"
-import { getProductByCategory } from "../Components/Products.js"
+import { getProductByCategory } from "../Components/Products"
 import Cart from '../Components/Cart';
 
 function Category(){

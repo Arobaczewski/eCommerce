@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { Heart, ShoppingCart, Search, X, Menu } from 'lucide-react'
 import { useState, useEffect, useRef } from 'react'
-import { products } from './Products.js'
+import { products } from './Products'
 import Dropdown from './Dropdown';
 import { useCart } from '../Context/CartContext'; // ✅ Fixed: uppercase 'Context'
 import { useFavorites } from '../Context/FavoritesContext'; // ✅ Fixed: uppercase 'Context'

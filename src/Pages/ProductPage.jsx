@@ -3,7 +3,7 @@ import { ChevronDown, Filter, Search, X } from 'lucide-react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import ProductCard from '../Components/ProductCard';
-import { products } from '../Components/Products.js';
+import { products } from '../Components/Products';
 import Cart from '../Components/Cart';
 
 // Enhanced FilterBar Component
