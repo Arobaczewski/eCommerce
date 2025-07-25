@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import emailjs from 'emailjs-com';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import Cart from '../Components/Cart.jsx';
+import Cart from '../Components/Cart';
 
 function Contact() {
     const [formData, setFormData] = useState({

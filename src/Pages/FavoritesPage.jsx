@@ -4,7 +4,7 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import ProductCard from '../Components/ProductCard';
 import { useFavorites } from '../Context/FavoritesContext';
-import Cart from '../Components/Cart.jsx';
+import Cart from '../Components/Cart';
 
 function Favorites() {
     const { favorites, clearAllFavorites, favoritesCount } = useFavorites();

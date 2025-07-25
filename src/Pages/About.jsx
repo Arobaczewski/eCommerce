@@ -1,7 +1,7 @@
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { ExternalLink, Github, Linkedin, Code, Trophy, Target, CheckCircle, Zap } from 'lucide-react';
-import Cart from '../Components/Cart.jsx';
+import Cart from '../Components/Cart';
 
 function About() {
     return (

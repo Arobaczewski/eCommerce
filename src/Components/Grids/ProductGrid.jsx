@@ -1,4 +1,4 @@
-import ProductCard from "../ProductCard.jsx";
+import ProductCard from "../ProductCard";
 
 function ProductGrid({ products, title }){
 

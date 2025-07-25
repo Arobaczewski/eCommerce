@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code } from 'lucide-react';
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
 import HomeGrids from "../Components/Grids/HomeGrids"
 
 function Home() {

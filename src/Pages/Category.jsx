@@ -3,7 +3,7 @@ import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import ProductGrid from "../Components/Grids/ProductGrid"
 import { getProductByCategory } from "../Components/Products"
-import Cart from '../Components/Cart.jsx';
+import Cart from '../Components/Cart';
 
 function Category(){
     const { categoryName = '' } = useParams();

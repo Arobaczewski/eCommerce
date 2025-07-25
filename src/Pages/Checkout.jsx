@@ -4,7 +4,7 @@ import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import { useCart } from "../Context/CartContext"
 import { CreditCard, Lock, CheckCircle, ArrowLeft, Shield, Truck, AlertCircle, Trash2 } from 'lucide-react';
-import Cart from '../Components/Cart.jsx';
+import Cart from '../Components/Cart';
 import emailjs from 'emailjs-com'; // ✅ Added missing import
 
 function Checkout() {
