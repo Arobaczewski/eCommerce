@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './CSS/index.css'
 import App from './App.jsx'
 import ProductPage from './Pages/ProductPage.jsx'
-import ProductDetail from './Pages/ProductDetail.jsx' // ✅ New dynamic component
+import ProductDetail from './Pages/ProductDetail.jsx'
 import Favorites from './Pages/FavoritesPage.jsx'
 import NotFound from './Pages/NotFound.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
     element: <ProductPage/>
   },
   {
-    path: '/products/:slug', // ✅ Dynamic product route
+    path: '/products/:slug',
     element: <ProductDetail/>
   },
   {
@@ -58,25 +58,6 @@ const router = createBrowserRouter([
     path: '/search',
     element: <SearchResults/>
   }
-  // ✅ REMOVE all these individual product routes:
-  // { path: 'products/wwe-championship-spinner', element: <Belt /> },
-  // { path: 'products/bedard-away-jersey', element: <Blackhawks /> },
-  // { path: 'products/palmer-home-jersey', element: <Chelsea /> },
-  // { path: 'products/couch', element: <Couch /> },
-  // { path: 'products/love-black-jersey', element: <Packers/> },
-  // { path: 'products/nvidia-graphics-card', element: <GraphicsCard /> },
-  // { path: 'products/nintendo-switch-2', element: <Switch2 /> },
-  // { path: 'products/konerko-home-jersey', element: <WhiteSox /> },
-  // { path: 'products/ninja-coffee', element: <Coffee /> },
-  // { path: 'products/motorcycle', element: <Motorcycle /> },
-  // { path: 'products/ninja-slushi', element: <Slushi /> },
-  // { path: 'products/sodastream', element: <Sodastream /> },
-  // { path: 'products/amd', element: <Amd /> },
-  // { path: 'products/home-pod', element: <Homepod /> },
-  // { path: 'products/airpods-max', element: <Airpodsmax /> },
-  // { path: 'products/ps5', element: <Ps5 /> },
-  // { path: 'products/tv', element: <Tv /> },
-  // { path: 'products/xbox', element: <Xbox /> },
 ]);
 
 createRoot(document.getElementById('root')).render(

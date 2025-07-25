@@ -1,20 +1,43 @@
+// About.jsx - Personal portfolio page showcasing career transition story and technical skills
+// This component serves as both a personal introduction and a demonstration of React/Tailwind mastery
+
+// Import React components for consistent site structure
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import { ExternalLink, Github, Linkedin, Code, Trophy, Target, CheckCircle, Zap } from 'lucide-react';
 import Cart from '../Components/Cart';
+
+// Import Lucide React icons for visual hierarchy and professional appearance
+// Strategic icon choices enhance readability and create visual breaks in content
+import { 
+    ExternalLink, 
+    Github, 
+    Linkedin, 
+    Code, 
+    Trophy, 
+    Target, 
+    CheckCircle, 
+    Zap 
+} from 'lucide-react';
 
 function About() {
     return (
         <>
+            {/* Consistent site structure - Header/Footer pattern used across all pages */}
             <Header />
+            
+            {/* Main container with light background for content separation */}
             <div className="bg-gray-50 min-h-screen">
-                {/* Hero Section */}
+                
+                {/* HERO SECTION - Attention-grabbing gradient header */}
+                {/* Design Decision: Used gradient to create visual impact and establish brand colors */}
                 <div className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white">
                     <div className="container mx-auto px-6 py-16">
                         <div className="max-w-4xl mx-auto text-center">
+                            {/* Responsive typography - larger on desktop, scales down on mobile */}
                             <h1 className="text-4xl md:text-5xl font-bold mb-4">
                                 Hey, I'm Alexander Robaczewski
                             </h1>
+                            {/* Subtitle with lighter color for visual hierarchy */}
                             <p className="text-xl md:text-2xl text-indigo-100 leading-relaxed">
                                 Career-changer turning 8+ years of tech sales experience into full-stack development expertise
                             </p>
@@ -22,16 +45,22 @@ function About() {
                     </div>
                 </div>
 
-                {/* Main Content */}
+                {/* MAIN CONTENT CONTAINER */}
+                {/* Consistent padding and max-width for optimal reading experience */}
                 <div className="container mx-auto px-6 py-12">
                     <div className="max-w-4xl mx-auto">
                         
-                        {/* Why This Site Exists */}
+                        {/* SECTION 1: Personal Story - Why This Site Exists */}
+                        {/* White cards with shadow for content separation and visual depth */}
                         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
+                            {/* Section headers with consistent styling and icon integration */}
                             <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
                                 <Target className="mr-3 text-indigo-600" />
                                 Why This Site Exists
                             </h2>
+                            
+                            {/* Prose styling for optimal readability */}
+                            {/* Design Decision: Using space-y-4 for consistent paragraph spacing */}
                             <div className="prose prose-lg text-gray-700 leading-relaxed space-y-4">
                                 <p>
                                     After years of selling technology at AT&T and Verizon (including management roles), 
@@ -43,6 +72,7 @@ function About() {
                                     but nothing clicked. Eventually, financial reality hit, and I took a position at a 
                                     retail cannabis store in June 2024. But the tech dream never died.
                                 </p>
+                                {/* Highlighted text using brand colors to emphasize key point */}
                                 <p className="font-semibold text-indigo-600">
                                     In March 2025, I finally found my answer: coding. I enrolled in Codecademy's full-stack 
                                     development course and immediately knew this was it. Time to build things instead of just selling them.
@@ -50,7 +80,7 @@ function About() {
                             </div>
                         </section>
 
-                        {/* Personal Story */}
+                        {/* SECTION 2: Personal Touch - Humanizing the Portfolio */}
                         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">The Personal Touch</h2>
                             <p className="text-gray-700 leading-relaxed mb-4">
@@ -58,7 +88,11 @@ function About() {
                                 Every product here tells a story about who I am:
                             </p>
                             
+                            {/* RESPONSIVE GRID LAYOUT */}
+                            {/* Design Decision: 3-column grid on desktop, stacks on mobile */}
                             <div className="grid md:grid-cols-3 gap-6 mt-6">
+                                
+                                {/* Personality Cards with alternating background colors for visual interest */}
                                 <div className="bg-indigo-50 p-6 rounded-lg border border-indigo-100">
                                     <h3 className="font-bold text-gray-900 mb-2">🏆 The Sports Fan</h3>
                                     <p className="text-gray-700 text-sm">
@@ -86,7 +120,8 @@ function About() {
                             </div>
                         </section>
 
-                        {/* Technical Skills Deep Dive */}
+                        {/* SECTION 3: Technical Skills Deep Dive */}
+                        {/* This section demonstrates technical knowledge organization and presentation skills */}
                         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
                                 <Code className="mr-3 text-indigo-600" />
@@ -97,13 +132,17 @@ function About() {
                                 Here's everything I've implemented from scratch:
                             </p>
                             
+                            {/* SKILLS GRID - 2x2 layout showcasing different technical areas */}
+                            {/* Design Decision: Using gradient backgrounds to categorize skill sets */}
                             <div className="grid md:grid-cols-2 gap-8">
-                                {/* React Fundamentals */}
+                                
+                                {/* React Fundamentals Card */}
                                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-100">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                                         <Zap className="mr-2 text-blue-500" size={20} />
                                         React Fundamentals
                                     </h3>
+                                    {/* Skill list with checkmarks for visual appeal and easy scanning */}
                                     <ul className="space-y-3">
                                         <li className="flex items-start">
                                             <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -132,7 +171,7 @@ function About() {
                                     </ul>
                                 </div>
 
-                                {/* Advanced Features */}
+                                {/* Advanced Features Card */}
                                 <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-lg border border-purple-100">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                                         <Trophy className="mr-2 text-purple-500" size={20} />
@@ -166,7 +205,7 @@ function About() {
                                     </ul>
                                 </div>
 
-                                {/* UI/UX & Design */}
+                                {/* UI/UX & Design Card */}
                                 <div className="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-lg border border-green-100">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                                         <Code className="mr-2 text-green-500" size={20} />
@@ -200,7 +239,7 @@ function About() {
                                     </ul>
                                 </div>
 
-                                {/* Data Management */}
+                                {/* Data Management Card */}
                                 <div className="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-lg border border-orange-100">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                                         <Target className="mr-2 text-orange-500" size={20} />
@@ -236,15 +275,18 @@ function About() {
                             </div>
                         </section>
 
-                        {/* Specific Implementation Examples */}
+                        {/* SECTION 4: Real Implementation Examples */}
+                        {/* Concrete examples that employers can reference when viewing other components */}
                         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">Real Implementation Examples</h2>
                             <p className="text-gray-700 leading-relaxed mb-6">
                                 Here are specific features I built that demonstrate these skills in action:
                             </p>
                             
+                            {/* Two-column grid for implementation examples */}
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-4">
+                                    {/* Each example uses colored left border for visual distinction */}
                                     <div className="bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-500">
                                         <h4 className="font-semibold text-gray-900 mb-2">🛒 Smart Shopping Cart</h4>
                                         <p className="text-sm text-gray-700">
@@ -298,7 +340,7 @@ function About() {
                             </div>
                         </section>
 
-                        {/* Learning Process */}
+                        {/* SECTION 5: Learning Process - Demonstrates self-awareness and growth mindset */}
                         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">The Learning Process</h2>
                             <div className="bg-gradient-to-r from-indigo-50 to-gray-50 p-6 rounded-lg border border-indigo-100">
@@ -307,6 +349,8 @@ function About() {
                                     it represents hundreds of hours of research, debugging, and iteration. Every feature 
                                     taught me something new:
                                 </p>
+                                
+                                {/* Learning outcomes grid */}
                                 <div className="grid md:grid-cols-2 gap-4 mt-4">
                                     <div>
                                         <h4 className="font-semibold text-gray-900 mb-2">🧠 Problem-Solving Skills</h4>
@@ -323,6 +367,8 @@ function About() {
                                         </p>
                                     </div>
                                 </div>
+                                
+                                {/* Future learning goals */}
                                 <p className="font-semibold text-indigo-600 mt-4">
                                     Next up: Adding PostgreSQL, Node.js, and Express to create a full-stack application 
                                     with real backend functionality, user authentication, and database persistence.
@@ -330,11 +376,12 @@ function About() {
                             </div>
                         </section>
 
-                        {/* Why I'm Different */}
+                        {/* SECTION 6: Unique Value Proposition */}
                         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why I'm Different</h2>
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-4">
+                                    {/* Differentiators with varying border colors for visual interest */}
                                     <div className="border-l-4 border-indigo-500 pl-4">
                                         <h3 className="font-semibold text-gray-900">Real-world Experience</h3>
                                         <p className="text-gray-700 text-sm">
@@ -372,7 +419,8 @@ function About() {
                             </div>
                         </section>
 
-                        {/* Let's Connect */}
+                        {/* SECTION 7: Call-to-Action / Contact Section */}
+                        {/* Full-width gradient section for maximum impact */}
                         <section className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white rounded-lg p-8">
                             <h2 className="text-3xl font-bold mb-6 text-center">Let's Connect</h2>
                             <p className="text-center text-indigo-100 mb-8 leading-relaxed">
@@ -380,10 +428,12 @@ function About() {
                                 where I can contribute while continuing to grow my full-stack capabilities.
                             </p>
                             
-                            {/* Portfolio Projects */}
+                            {/* PORTFOLIO PROJECTS SHOWCASE */}
                             <div className="mb-8">
                                 <h3 className="text-xl font-semibold mb-4 text-center">Portfolio Projects</h3>
+                                {/* 3-column grid of project cards */}
                                 <div className="grid md:grid-cols-3 gap-4">
+                                    {/* Current Project - No external link */}
                                     <div className="bg-white/10 p-4 rounded-lg">
                                         <div className="font-semibold mb-2">🛒 This Ecommerce Site</div>
                                         <div className="text-sm text-indigo-100 mb-2">
@@ -394,6 +444,7 @@ function About() {
                                         </div>
                                     </div>
                                     
+                                    {/* External projects with hover effects and proper link attributes */}
                                     <a 
                                         href="https://ayrtips.netlify.app/" 
                                         target="_blank" 
@@ -428,7 +479,8 @@ function About() {
                                 </div>
                             </div>
                             
-                            {/* Social Links */}
+                            {/* SOCIAL LINKS */}
+                            {/* Centered flex layout with hover effects */}
                             <div className="flex justify-center space-x-6">
                                 <a 
                                     href="https://www.linkedin.com/in/alexander-robaczewski/" 
@@ -451,6 +503,7 @@ function About() {
                                 </a>
                             </div>
                             
+                            {/* Personal touch to maintain authenticity */}
                             <p className="text-center text-indigo-100 mt-6">
                                 Thanks for checking out my work – and yes, I really do want all these products! 😄
                             </p>
@@ -458,10 +511,14 @@ function About() {
                     </div>
                 </div>
             </div>
+            
+            {/* Consistent footer structure */}
             <Footer />
+            {/* Global cart component - available on all pages */}
             <Cart/>
         </>
     );
 }
 
+// Export component for use in routing
 export default About;
