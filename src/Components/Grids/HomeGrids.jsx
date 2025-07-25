@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { getProductByCategory } from "../Products";
+import { getProductByCategory } from "../Products.js";
 import ProductGrid from "./ProductGrid"
 
 function HomeGrids({ currentProductId, category }) {

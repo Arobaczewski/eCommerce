@@ -1,5 +1,5 @@
 import ProductGrid from "../Grids/ProductGrid"
-import { getProductByCategory } from "../Products"
+import { getProductByCategory } from "../Products.js"
 
 function RecommendedGrids({ currentProductId, category }){
     

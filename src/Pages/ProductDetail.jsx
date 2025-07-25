@@ -1,7 +1,7 @@
 import { HeartPlus, Plus, ChevronRight, Home } from 'lucide-react';
 import { useState } from "react";
 import { useParams, Link } from 'react-router-dom';
-import { products } from '../Components/Products';
+import { products } from '../Components/Products.js';
 import { useCart } from '../Context/CartContext';
 import { useFavorites } from '../Context/FavoritesContext';
 import Header from '../Components/Header';

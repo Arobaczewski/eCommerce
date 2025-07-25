@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 import Header from "./Header";
 import Footer from "./Footer";
 import ProductGrid from "./Grids/ProductGrid";
-import { products } from "./Products";
+import { products } from "./Products.js";
 
 function SearchResults() {
     const [searchParams] = useSearchParams();
