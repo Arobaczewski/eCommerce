@@ -301,7 +301,7 @@ function Contact() {
                                         <span className="text-2xl">⚡</span>
                                     </div>
                                     <h3 className="font-semibold text-gray-900 mb-2">Fast Learner</h3>
-                                    <p className="text-gray-600 text-sm">Built this entire portfolio in 2 weeks while learning React and Tailwind</p>
+                                    <p className="text-gray-600 text-sm">Built this entire portfolio in 4 weeks while learning React and Tailwind</p>
                                 </div>
                                 <div className="text-center">
                                     <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
