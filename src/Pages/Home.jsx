@@ -40,8 +40,7 @@ function Home() {
   return (
     <>
       {/* ========== HERO SECTION - FIRST IMPRESSIONS MATTER ========== */}
-      
-      /**
+      {/*
        * HERO SECTION DESIGN STRATEGY
        * 
        * This hero section implements modern landing page best practices:
@@ -54,7 +53,7 @@ function Home() {
        * 
        * The background gradient uses CSS transforms and blur effects to create
        * depth without impacting performance or accessibility.
-       */
+       */}
       <div className="relative isolate overflow-hidden bg-white">
         
         {/* BACKGROUND DECORATION - Modern Visual Appeal */}
