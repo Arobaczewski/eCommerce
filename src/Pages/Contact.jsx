@@ -323,7 +323,7 @@ function Contact() {
                                 Get In Touch
                             </h1>
                             
-                            /**
+                            {/**
                              * VALUE PROPOSITION MESSAGING - EMPLOYER-FOCUSED COMMUNICATION
                              * 
                              * Messaging Strategy:
@@ -331,7 +331,7 @@ function Contact() {
                              * - "help bring your ideas to life" - Positions as solution provider
                              * - Clear, professional tone appeals to business decision makers
                              * - Creates collaborative framework for initial conversations
-                             */
+                             */}
                             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                                 Interested in working together? I'd love to hear about your project and discuss how I can help bring your ideas to life.
                             </p>
@@ -346,7 +346,7 @@ function Contact() {
                                     Let's Connect
                                 </h2>
                                 
-                                /**
+                                {/**
                                  * PROFESSIONAL POSITIONING STATEMENT
                                  * 
                                  * Strategic Elements:
@@ -354,7 +354,7 @@ function Contact() {
                                  * - Specific role targets (front-end, React) - Clear positioning
                                  * - "contribute while continuing to grow" - Balanced confidence/humility
                                  * - "Feel free to reach out!" - Approachable and encouraging
-                                 */
+                                 */}
                                 <p className="text-gray-600 mb-8">
                                     I'm actively seeking opportunities in front-end development, React development, 
                                     or any role where I can contribute while continuing to grow. Feel free to reach out!
@@ -363,7 +363,7 @@ function Contact() {
                                 {/* ========== MULTI-CHANNEL COMMUNICATION OPTIONS ========== */}
                                 <div className="space-y-6">
                                     
-                                    /**
+                                    {/**
                                      * EMAIL CONTACT - PRIMARY COMMUNICATION CHANNEL
                                      * 
                                      * Design Decisions:
@@ -371,7 +371,7 @@ function Contact() {
                                      * - Icon + text layout provides clear visual hierarchy
                                      * - Hover effects indicate interactivity
                                      * - Mailto link enables direct email client integration
-                                     */
+                                     */}
                                     <div className="flex items-center">
                                         <div className="bg-indigo-100 p-3 rounded-full mr-4">
                                             <Mail className="h-6 w-6 text-indigo-600" />
@@ -387,7 +387,7 @@ function Contact() {
                                         </div>
                                     </div>
                                     
-                                    /**
+                                    {/**
                                      * PHONE CONTACT - DIRECT COMMUNICATION OPTION
                                      * 
                                      * Business Strategy:
@@ -395,7 +395,7 @@ function Contact() {
                                      * - Tel: protocol enables mobile device click-to-call
                                      * - Shows confidence in direct communication abilities
                                      * - Reduces friction for time-sensitive opportunities
-                                     */
+                                     */}
                                     <div className="flex items-center">
                                         <div className="bg-indigo-100 p-3 rounded-full mr-4">
                                             <Phone className="h-6 w-6 text-indigo-600" />
@@ -411,7 +411,7 @@ function Contact() {
                                         </div>
                                     </div>
                                     
-                                    /**
+                                    {/**
                                      * LOCATION CONTEXT - GEOGRAPHIC AVAILABILITY
                                      * 
                                      * Purpose:
@@ -419,7 +419,7 @@ function Contact() {
                                      * - Chicago tech market positioning
                                      * - Timezone context for remote collaboration
                                      * - Cultural/market fit indicators for regional employers
-                                     */
+                                     */}
                                     <div className="flex items-center">
                                         <div className="bg-indigo-100 p-3 rounded-full mr-4">
                                             <MapPin className="h-6 w-6 text-indigo-600" />
@@ -436,7 +436,7 @@ function Contact() {
                                     <h3 className="font-semibold text-gray-900 mb-4">Find me online</h3>
                                     <div className="flex space-x-4">
                                         
-                                        /**
+                                        {/**
                                          * LINKEDIN INTEGRATION - PROFESSIONAL NETWORKING
                                          * 
                                          * Strategic Value:
@@ -450,7 +450,7 @@ function Contact() {
                                          * - Target="_blank" opens new tab preserving portfolio session
                                          * - rel="noopener noreferrer" ensures security best practices
                                          * - Hover effects provide interaction feedback
-                                         */
+                                         */}
                                         <a 
                                             href="https://www.linkedin.com/in/alexander-robaczewski/" 
                                             target="_blank" 
@@ -463,7 +463,7 @@ function Contact() {
                                             </svg>
                                         </a>
                                         
-                                        /**
+                                        {/**
                                          * GITHUB INTEGRATION - TECHNICAL CREDIBILITY
                                          * 
                                          * Technical Value:
@@ -477,7 +477,7 @@ function Contact() {
                                          * - Shows continuous learning through project evolution
                                          * - Demonstrates version control and collaboration skills
                                          * - Provides hiring managers with concrete technical evidence
-                                         */
+                                         */}
                                         <a 
                                             href="https://github.com/Arobaczewski" 
                                             target="_blank" 
@@ -608,7 +608,7 @@ function Contact() {
                                             />
                                         </div>
                                         
-                                        /**
+                                        {/**
                                          * SUBMIT BUTTON - ADVANCED LOADING STATE MANAGEMENT
                                          * 
                                          * Technical Features:
@@ -622,7 +622,7 @@ function Contact() {
                                          * - Professional loading animation maintains engagement
                                          * - Prevents duplicate submissions that could create bad user experience
                                          * - Consistent visual language with rest of interface
-                                         */
+                                         */}
                                         <button
                                             type="submit"
                                             disabled={isLoading}
@@ -647,7 +647,7 @@ function Contact() {
                         
                         {/* ========== PERSONAL BRANDING SECTION - VALUE PROPOSITION ========== */}
                         
-                        /**
+                        {/**
                          * COMPETITIVE ADVANTAGE SHOWCASE
                          * 
                          * This section strategically positions unique value propositions:
@@ -666,7 +666,7 @@ function Contact() {
                          *    - Management background provides leadership perspective
                          *    - Fast-paced retail tech experience = deadline management
                          *    - Cross-functional communication skills from customer-facing roles
-                         */
+                         */}
                         <div className="mt-16 text-center bg-indigo-50 rounded-lg p-8 border border-indigo-200">
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">
                                 Why Work With Me?

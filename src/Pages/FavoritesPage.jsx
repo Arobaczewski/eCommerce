@@ -137,7 +137,7 @@ function Favorites() {
 
                                 {/* ========== PRODUCTS DISPLAY GRID ========== */}
                                 
-                                /**
+                                {/**
                                  * RESPONSIVE PRODUCT GRID - Context-Aware Component Usage
                                  * 
                                  * Uses ProductCard with special configuration:
@@ -146,7 +146,7 @@ function Favorites() {
                                  * - Proper spacing and visual hierarchy maintained
                                  * 
                                  * This demonstrates component reusability with context-specific behavior
-                                 */
+                                 */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                                     {favorites.map(product => (
                                         <ProductCard 
@@ -222,7 +222,7 @@ function Favorites() {
                                 
                                 {/* ========== CATEGORY DISCOVERY SECTION ========== */}
                                 
-                                /**
+                                {/**
                                  * STRATEGIC CATEGORY LINKS - Guided Discovery
                                  * 
                                  * Professional category suggestion cards with:
@@ -232,7 +232,7 @@ function Favorites() {
                                  * - Strategic category selection based on product catalog
                                  * 
                                  * This drives user engagement and product discovery
-                                 */
+                                 */}
                                 <div className="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
                                     
                                     {/* APPAREL CATEGORY - Sports and Fashion */}

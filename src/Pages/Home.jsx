@@ -199,7 +199,7 @@ function Home() {
 
       {/* ========== FEATURED PRODUCTS SECTIONS - PORTFOLIO SHOWCASE ========== */}
       
-      /**
+      {/**
        * PRODUCT SHOWCASE STRATEGY
        * 
        * This section demonstrates several advanced concepts:
@@ -223,12 +223,12 @@ function Home() {
        *    - React Router Link components for SPA navigation
        *    - Responsive design with mobile considerations
        *    - Accessibility through semantic HTML structure
-       */
+       */}
       <div className="bg-gray-50 py-16">
         
         {/* ========== APPAREL SECTION ========== */}
         
-        /**
+        {/**
          * CATEGORY SHOWCASE: APPAREL
          * 
          * Personal Branding Elements:
@@ -240,7 +240,7 @@ function Home() {
          * - Consistent section structure for maintainability
          * - Border-top creates visual separation without harsh lines
          * - Flexbox layout ensures proper alignment across screen sizes
-         */
+         */}
         <section className="mb-16">
           <div className="container mx-auto px-6">
             
@@ -275,14 +275,14 @@ function Home() {
 
         {/* ========== TECHNOLOGY SECTION ========== */}
         
-        /**
+        {/**
          * CATEGORY SHOWCASE: TECHNOLOGY
          * 
          * Strategic Messaging:
          * - "Latest gaming and computing hardware" = technical credibility
          * - Aligns with target developer roles
          * - Shows understanding of current tech trends
-         */
+         */}
         <section className="mb-16">
           <div className="container mx-auto px-6">
             <div className='border-t border-gray-200 pt-8'>
@@ -307,14 +307,14 @@ function Home() {
 
         {/* ========== MISCELLANEOUS SECTION ========== */}
         
-        /**
+        {/**
          * CATEGORY SHOWCASE: MISCELLANEOUS
          * 
          * Authenticity Reinforcement:
          * - "Home goods and collectibles I actually want"
          * - Reinforces the genuine personal wishlist concept
          * - Shows well-rounded personality beyond just tech interests
-         */
+         */}
         <section className="mb-16">
           <div className="container mx-auto px-6">
             <div className='border-t border-gray-200 pt-8'>
@@ -340,7 +340,7 @@ function Home() {
 
       {/* ========== PORTFOLIO CALL-TO-ACTION SECTION ========== */}
       
-      /**
+      {/**
        * TECHNICAL CREDIBILITY & HIRING CTA
        * 
        * This section serves multiple strategic purposes:
@@ -365,7 +365,7 @@ function Home() {
        *    - Proper color contrast ratios
        *    - Semantic heading structure
        *    - Target="_blank" with rel="noopener noreferrer" for security
-       */
+       */}
       <div className="bg-indigo-600">
         <div className="container mx-auto px-6 py-16">
           <div className="text-center">
