@@ -21,7 +21,7 @@
  */
 
 import { Link, useNavigate } from 'react-router-dom'
-import { Heart, ShoppingCart, Search, X, Menu } from 'lucide-react'
+import { Heart, ShoppingCart, Search, X, Menu, ChevronDown } from 'lucide-react'
 import { useState, useEffect, useRef } from 'react'
 import { products } from './Products'
 import Dropdown from './Dropdown';
@@ -39,6 +39,7 @@ function Header(){
     const [searchSuggestions, setSearchSuggestions] = useState([]); // Filtered product suggestions
     const [showSuggestions, setShowSuggestions] = useState(false);  // Controls dropdown visibility
     const [selectedIndex, setSelectedIndex] = useState(-1);        // Keyboard navigation index
+    const [mobileProductsOpen, setMobileProductsOpen] = useState(false); // Mobile drop down products menu
     
     // React Router navigation hook
     const navigate = useNavigate();
@@ -429,13 +430,50 @@ function Header(){
                         {/* Mobile Navigation Links */}
                         <ul className='space-y-4'>
                             <li>
-                                <Link
-                                    to='/products'
+                                <button
                                     className='block py-2 text-white hover:text-indigo-200 transition-colors font-medium'
-                                    onClick={() => setMobileMenu(false)} // Close menu after navigation
+                                    onClick={() => setMobileMenu(true)} // Close menu after navigation
                                 >
-                                    Products
-                                </Link>
+                                    Products 
+                                    <ChevronDown
+                                        className={`transition-transform duration-200 ${
+                                            mobileProductsOpen ? 'rotate-90' : ''
+                                        }`}
+                                    />
+                                </button>
+                                {mobileProductsOpen && (
+                                    <div className='bg-white border-t border-white'>
+                                        <ul className='space-y-4'>
+                                            <li>
+                                                <Link
+                                                    to='/apparel'
+                                                    className='block py-2 text-gray-600 hover:text-gray-700 transition-colors font-medium'
+                                                    onClick={() => setMobileProductsOpen(false)}
+                                                >
+                                                    Apparel
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                to='/misc'
+                                                className='block py-2 text-gray-600 hover:text-gray-700 transition-colors font-medium'
+                                                onClick={() => setMobileProductsOpen(false)}
+                                                >
+                                                    Technology
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                to='/misc'
+                                                className='block py-2 text-gray-600 hover:text-gray-700 transition-colors font-medium'
+                                                onClick={() => setMobileProductsOpen(false)}
+                                                >
+                                                    Misc
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                )}
                             </li>
                             <li>
                                 <Link
