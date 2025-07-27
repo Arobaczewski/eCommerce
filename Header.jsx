@@ -207,6 +207,10 @@ function Header(){
         setMobileMenu(!mobileMenu);
     }
 
+    const toggleProductsOpen = () => {
+        setMobileProductsOpen(!mobileProductsOpen);
+    }
+
     return (
         // Main header container with brand colors and responsive design
         <div className='w-full bg-indigo-600 border-b border-indigo-700 shadow-sm'>
@@ -432,11 +436,11 @@ function Header(){
                             <li>
                                 <button
                                     className='block py-2 text-white hover:text-indigo-200 transition-colors font-medium'
-                                    onClick={() => setMobileProductsOpen(true)} // Close menu after navigation
+                                    onClick={toggleProductsOpen} // Toggle Mobile Product Menu
                                 >
                                     Products 
                                     <ChevronDown
-                                        className={`flex transition-transform duration-200 ${
+                                        className={`transition-transform duration-200 ${
                                             mobileProductsOpen ? 'rotate-90' : ''
                                         }`}
                                     />
@@ -448,7 +452,7 @@ function Header(){
                                                 <Link
                                                     to='/apparel'
                                                     className='block py-2 text-gray-600 hover:text-gray-700 transition-colors font-medium'
-                                                    onClick={() => setMobileProductsOpen(false)}
+                                                    onClick={() => setMobileMenu(false)}
                                                 >
                                                     Apparel
                                                 </Link>
@@ -457,7 +461,7 @@ function Header(){
                                                 <Link
                                                 to='/misc'
                                                 className='block py-2 text-gray-600 hover:text-gray-700 transition-colors font-medium'
-                                                onClick={() => setMobileProductsOpen(false)}
+                                                onClick={() => setMobileMenu(false)}
                                                 >
                                                     Technology
                                                 </Link>
@@ -466,7 +470,7 @@ function Header(){
                                                 <Link
                                                 to='/misc'
                                                 className='block py-2 text-gray-600 hover:text-gray-700 transition-colors font-medium'
-                                                onClick={() => setMobileProductsOpen(false)}
+                                                onClick={() => setMobileMenu(false)}
                                                 >
                                                     Misc
                                                 </Link>
