@@ -160,7 +160,7 @@ ${cartItems.map(item => {
                     to_email: formData.email,
                     to_name: formData.firstName,
                     inquiry_subject: `Order Confirmation - #RW-2025-001`,
-                    resume_link: '/resume/Alexander_Robaczewski_Resume.pdf',
+                    resume_link: `${window.location.origin}/Resume/Alexander_Robaczewski_Resume.pdf`,
                     portfolio_link: window.location.origin
                 },
                 EMAIL_USER_ID

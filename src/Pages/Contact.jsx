@@ -267,7 +267,6 @@ function Contact() {
                     inquiry_subject: formData.subject,
                     // STRATEGIC ASSET DISTRIBUTION
                     resume_link: `${window.location.origin}/resume/Alexander_Robaczewski_Resume.pdf`,
-                    portfolio_link: window.location.origin
                 },
                 EMAIL_USER_ID
             );
