@@ -58,7 +58,7 @@ function NotFound() {
                     
                     {/* ========== VISUAL ERROR INDICATOR ========== */}
                     
-                    /**
+                    {/**
                      * 404 VISUAL DESIGN STRATEGY
                      * 
                      * Large, bold 404 number serves multiple purposes:
@@ -68,7 +68,7 @@ function NotFound() {
                      * 4. Decorative line adds polish without distraction
                      * 
                      * This approach balances clarity with brand consistency.
-                     */
+                     */}
                     <div className="mb-8">
                         {/* PROMINENT ERROR CODE - Clear identification of issue */}
                         <div className="text-8xl font-bold text-indigo-600 mb-4">404</div>
@@ -78,7 +78,7 @@ function NotFound() {
                     
                     {/* ========== USER-FRIENDLY ERROR MESSAGING ========== */}
                     
-                    /**
+                    {/**
                      * ERROR MESSAGE STRATEGY
                      * 
                      * Tone and language choices are crucial for user retention:
@@ -89,7 +89,7 @@ function NotFound() {
                      * 
                      * This messaging maintains the site's e-commerce context while
                      * adding personality that makes the error less frustrating.
-                     */
+                     */}
                     <div className="mb-8">
                         <h1 className="text-3xl font-bold text-gray-900 mb-4">
                             Oops! Page Not Found
@@ -103,7 +103,7 @@ function NotFound() {
                     
                     {/* ========== PRIMARY RECOVERY ACTIONS ========== */}
                     
-                    /**
+                    {/**
                      * RECOVERY ACTION HIERARCHY
                      * 
                      * Two main CTAs address different user intentions:
@@ -120,7 +120,7 @@ function NotFound() {
                      * 
                      * Both use consistent padding, typography, and transitions
                      * for professional polish and user experience continuity.
-                     */
+                     */}
                     <div className="space-y-4 mb-8">
                         
                         {/* PRIMARY RECOVERY CTA - Back to Home */}
@@ -144,7 +144,7 @@ function NotFound() {
                     
                     {/* ========== ADDITIONAL NAVIGATION OPTIONS ========== */}
                     
-                    /**
+                    {/**
                      * QUICK LINKS STRATEGY
                      * 
                      * This section provides multiple recovery paths for different user goals:
@@ -157,7 +157,7 @@ function NotFound() {
                      * - 2-column grid for organized presentation
                      * - Consistent indigo links with hover effects
                      * - Small text size to maintain hierarchy
-                     */
+                     */}
                     <div className="border-t border-gray-200 pt-8">
                         <p className="text-sm text-gray-500 mb-4">Or try one of these popular pages:</p>
                         
@@ -196,7 +196,7 @@ function NotFound() {
                     
                     {/* ========== VALUE-ADD HELPER SECTION ========== */}
                     
-                    /**
+                    {/**
                      * PRO TIP SECTION - Adding Value During Errors
                      * 
                      * This section transforms a negative experience into a learning moment:
@@ -207,7 +207,7 @@ function NotFound() {
                      * 
                      * This demonstrates UX thinking beyond just fixing the immediate problem
                      * to actually improving the overall user experience.
-                     */
+                     */}
                     <div className="mt-8 p-4 bg-indigo-50 rounded-lg border border-indigo-100">
                         <p className="text-sm text-indigo-700">
                             💡 <strong>Pro tip:</strong> Use the search bar in the header to find exactly what you're looking for!
