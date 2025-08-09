@@ -400,12 +400,12 @@ function Contact() {
                                             <Phone className="h-6 w-6 text-indigo-600" />
                                         </div>
                                         <div>
-                                            <h3 className="font-semibold text-gray-900">Phone</h3>
+                                            <h3 className="font-semibold text-gray-900">Linkedin</h3>
                                             <a 
-                                                href="tel:+13123304288" 
+                                                href="https://www.linkedin.com/in/alexander-robaczewski/" 
                                                 className="text-indigo-600 hover:text-indigo-500 transition-colors"
                                             >
-                                                (312) 330-4288
+                                                https://www.linkedin.com/in/alexander-robaczewski/
                                             </a>
                                         </div>
                                     </div>
