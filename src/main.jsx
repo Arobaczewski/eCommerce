@@ -253,7 +253,7 @@ const router = createBrowserRouter([
  *    - Code quality enforcement through strict checks
  */
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <>
     {/* GLOBAL STATE PROVIDER COMPOSITION */}
     <CartProvider>
       {/* 
@@ -299,7 +299,7 @@ createRoot(document.getElementById('root')).render(
         </FavoritesProvider>
       </CheckoutProvider>
     </CartProvider>
-  </StrictMode>,
+  </>
 )
 
 // ========== APPLICATION ARCHITECTURE ANALYSIS ==========
