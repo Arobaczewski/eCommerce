@@ -404,6 +404,8 @@ function Contact() {
                                             <a 
                                                 href="https://www.linkedin.com/in/alexander-robaczewski/" 
                                                 className="text-indigo-600 hover:text-indigo-500 transition-colors"
+                                                target='_black'
+                                                rel='noopener noreferrer'
                                             >
                                                 https://www.linkedin.com/in/alexander-robaczewski/
                                             </a>
